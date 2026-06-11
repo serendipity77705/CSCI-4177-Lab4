@@ -1,0 +1,96 @@
+@import "./variables.css";
+
+* {
+    font-size: 13px;
+    background-color: white;
+}
+
+.error {
+    color: white;
+    background-color: red;
+}
+
+.login-page, .signup-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--light-blue-background) 0%, white 50%, var(--light-blue-background) 100%);
+}
+
+.product-name {
+  color: var(--blue);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 100px;
+}
+
+p {
+    color: var(--gray-writing);
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    background-color: white;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 10px;
+    padding: 50px 40px 45px 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    color: black;
+    background: transparent;
+    background: transparent;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    padding: 5px 200px 5px 5px;
+    background-color: white;
+}
+
+#link {
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold; 
+    background-color: white;
+}
+
+#redirect {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.form-field {
+    background-color: white;
+}
+
+button {
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}

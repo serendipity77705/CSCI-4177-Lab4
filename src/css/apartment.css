@@ -1,0 +1,545 @@
+@import "variables.css";
+
+.apartment-page {
+  width: 80%;
+  margin: 0 auto;
+  padding: 24px 32px 64px;
+  background: #f4f6fb;
+  min-height: 100vh;
+}
+
+.apartment-rating h1 {
+    color: var(--blue);
+}
+
+#summary {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.back-link {
+    display: flex;
+    align-items: left;
+    padding-left: 60px;
+    background-color: white;
+    color: var(--blue);
+    padding-left: 60px;
+    text-align: left;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.apartment-detail {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.apartment-info h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 6px;
+}
+
+.apartment-info .address {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 0 10px;
+}
+
+.apartment-info .short-summary {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.apartment-rating {
+  text-align: right;
+  min-width: 120px;
+}
+
+.apartment-rating .big-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #3d6ef6;
+  line-height: 1;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.apartment-rating .review-count {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 4px;
+  display: block;
+}
+
+.stars {
+  display: inline-flex;
+  gap: 2px;
+}
+.star-filled {
+  color: #f5a623;
+  font-size: 1.1rem;
+}
+.star-empty {
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+.apartment-body {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 24px;
+  align-items: start;
+}
+
+.apartment-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ai-summary {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px 28px;
+  border-left: 4px solid #3d6ef6;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.ai-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #3d6ef6;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ai-summary p {
+  font-size: 0.92rem;
+  color: #333;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.key-issues {
+  padding: 0 4px;
+}
+
+.key-issues p {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 10px;
+}
+
+.key-issues .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #eef2ff;
+  color: #3d6ef6;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.reviews {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px 28px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.reviews .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reviews .header h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.reviews .header button {
+  background: #fff;
+  border: 1.5px solid #d0d7e8;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.reviews .header button:hover {
+  border-color: #3d6ef6;
+  color: #3d6ef6;
+  background: #f0f4ff;
+}
+
+.review-card {
+  padding: 20px 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.reviewer-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviewer-initials {
+  width: 36px;
+  height: 36px;
+  background: #eef2ff;
+  color: #3d6ef6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.reviewer-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 2px;
+}
+
+.review-date {
+  font-size: 0.78rem;
+  color: #999;
+  margin: 0;
+}
+
+.review-stars {
+  display: flex;
+  align-items: center;
+}
+
+.review-card > p {
+  font-size: 0.88rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+
+.review-author {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.comment-thread {
+  margin-top: 12px;
+  padding-left: 16px;
+  border-left: 2px solid #eef2ff;
+}
+
+.comment {
+  padding: 10px 14px;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.comment-author {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 3px;
+}
+
+.comment-author .comment-date {
+  font-weight: 400;
+  color: #aaa;
+  margin-left: 8px;
+  font-size: 0.78rem;
+}
+
+.comment p {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 0;
+}
+
+.comment-input-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.comment-input-row input {
+  flex: 1;
+  border: 1.5px solid #e0e5f0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  color: #333;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.comment-input-row input:focus {
+  border-color: #3d6ef6;
+}
+
+.comment-input-row button {
+  background: #3d6ef6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.comment-input-row button:hover {
+  background: #2d5de0;
+}
+
+.apartment-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 24px;
+}
+
+.property-info {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.property-info h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 16px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 0.85rem;
+}
+
+.rating-breakdown {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.rating-breakdown h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 16px;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 0.82rem;
+  color: #555;
+}
+
+.rating-bar {
+  flex: 1;
+  height: 6px;
+  background: #eee;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.rating-bar-fill {
+  height: 100%;
+  background: #3d6ef6;
+  border-radius: 99px;
+  transition: width 0.3s ease;
+}
+
+.write-review-btn {
+  background: #3d6ef6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.15s;
+}
+.write-review-btn:hover {
+  background: #2d5de0;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 480px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.modal-header h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.modal-header button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #888;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+.modal-header button:hover {
+  color: #333;
+}
+
+.modal-content label,
+.modal-content p.field-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.star-input {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.star-input span {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #ddd;
+  transition: color 0.1s;
+  line-height: 1;
+}
+
+.star-input span.filled {
+  color: #f5a623;
+}
+
+.modal-content textarea {
+  width: 100%;
+  border: 1.5px solid #e0e5f0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 0.88rem;
+  color: #333;
+  resize: vertical;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.15s;
+  min-height: 120px;
+  margin-bottom: 20px;
+  font-family: inherit;
+}
+.modal-content textarea:focus {
+  border-color: #3d6ef6;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+
+.no-results {
+  color: #aaa;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 32px 0;
+}
+
+@media (max-width: 768px) {
+  .apartment-body {
+    grid-template-columns: 1fr;
+  }
+  .apartment-sidebar {
+    position: static;
+  }
+  .apartment-detail {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .apartment-rating {
+    text-align: left;
+  }
+}

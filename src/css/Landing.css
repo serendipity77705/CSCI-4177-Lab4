@@ -1,0 +1,157 @@
+@import "variables.css";
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  background: var(--gray-background);
+}
+
+.product-name {
+  color:var(--blue);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-buttons {
+  background: transparent
+}
+
+#sign-in {
+  background-color: var(--gray-background);
+  color: var(--gray-writing);
+  font-size: 16px;
+  margin-right: 7px;
+  padding: 5px 13px 5px 13px;
+}
+
+#sign-in:hover {
+  background-color: var(--light-blue-background);
+  color: var(--blue);
+  border-radius: 5px;
+  border: 0px;
+  padding: 5px 13px 5px 13px;
+}
+
+#get-started {
+  background-color:var(--blue);
+  color:#ffffff;
+  border-radius: 5px;
+  border: 0px;
+  padding: 5px 13px 5px 13px;
+  font-size: 16px;
+}
+
+#get-started:hover {
+  background-color: var(--dark-blue);
+  color: #ffffff;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 0px 50px 0px;
+  background-color: var(--gray-background);
+}
+
+.launching {
+  background-color: var(--light-blue-background);
+  color: var(--blue);
+  border-radius: 10px;
+  width: 30%;
+}
+
+.statement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  line-height: 1.05;  
+}
+
+h1{
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#intro {
+  font-size: 18px;
+  color: var(--gray-writing);
+  text-align: center;
+  background-color: var(--gray-background);
+}
+
+.account-setup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+
+#create-account {
+  background-color: var(--blue);
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 25px 10px 25px;
+}
+
+#create-account:hover {
+  background-color: var(--dark-blue);
+  color: #ffffff;
+}
+
+#sign-in-2 {
+  background-color: #ffffff;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  font-size: 15px;
+  padding: 10px 5px 10px 5px;
+  width: 75%;
+}
+
+#sign-in-2:hover {
+  background-color: var(--light-blue-background);
+}
+
+.button {
+  border: 0px;
+  border-radius: 5px;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  margin-bottom: 100px;
+  background-color: var(--gray-background)
+}
+
+#reviews, #ai, #questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 180px;
+  gap: 8px;
+
+  background: transparent;
+}
+
+#reviews > p, #ai > p, #questions > p {
+  background: transparent;
+}
+
+h1, h2 {
+  background-color: var(--gray-background);
+}
+
+div {
+  background-color: var(--gray-background);
+}
